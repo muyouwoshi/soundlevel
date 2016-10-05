@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calculator_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/calculator_show" >
+
+            <EditText
+                android:id="@+id/condition_show"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/hintText"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_weight="3"
+            android:padding="10dp" >
+
+            <LinearLayout
+                style="@style/style_layout_left"
+                android:gravity="center"
+                android:background="@color/calculator_bg" >
+
+                <Button
+                    android:id="@+id/btn_A"
+                    style="@style/calculator"
+                    android:text="A" />
+
+                <Button
+                    android:id="@+id/btn_B"
+                    style="@style/calculator"
+                    android:text="B" />
+
+                <Button
+                    android:id="@+id/btn_C"
+                    style="@style/calculator"
+                    android:text="C" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/style_layout_left"
+                android:gravity="center"
+                android:background="@color/calculator_bg" >
+
+                <Button
+                    android:id="@+id/btn_and"
+                    style="@style/calculator"
+                    android:text="@string/and" />
+
+                <Button
+                    android:id="@+id/btn_or"
+                    style="@style/calculator"
+                    android:text="@string/or" />
+
+                <Button
+                    android:id="@+id/btn_brackets1"
+                    style="@style/calculator"
+                    android:text="(" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/style_layout_left"
+                android:gravity="center"
+                android:background="@color/calculator_bg" >
+
+                <Button
+                    android:id="@+id/btn_brackets2"
+                    style="@style/calculator"
+                    android:text=")" />
+
+                <Button
+                    android:id="@+id/btn_ensure"
+                    style="@style/calculator"
+                    android:text="确定" />
+
+                <Button
+                    android:id="@+id/btn_backspace"
+                    style="@style/calculator"
+                    android:text="后退" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

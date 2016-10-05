@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bkg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/style_fmg_title" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tltle_fragment_parametersetting"
+                android:textColor="@color/text_color"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9" >
+
+            <LinearLayout
+                style="@style/style_aty_scrollchild"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <!-- <LinearLayout style="@style/style_fmg_child_title" > -->
+                    <!-- <TextView -->
+                    <!-- style="@style/childTittle" -->
+                    <!-- android:text="参数设置" /> -->
+                    <!-- </LinearLayout> -->
+
+                    <LinearLayout style="@style/style_param_layout" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/parmeter_freq" />
+
+                        <Spinner
+                            android:id="@+id/ps_frequency"
+                            style="@style/style_spinner" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:paddingLeft="10dp"
+                            android:text="Hz" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/style_param_layout" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/parmeter_scope" />
+
+                        <Spinner
+                            android:id="@+id/ps_scope"
+                            style="@style/style_spinner" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:paddingLeft="10dp"
+                            android:text="Hz" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/style_param_layout" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/parmeter_resolution" />
+
+                        <Spinner
+                            android:id="@+id/ps_resolution"
+                            style="@style/style_spinner" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:paddingLeft="10dp"
+                            android:text="Hz" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/style_param_layout" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/parmeter_function" />
+
+                        <Spinner
+                            android:id="@+id/ps_function"
+                            style="@style/style_spinner" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/style_param_layout" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/parmeter_weighted" />
+
+                        <Spinner
+                            android:id="@+id/ps_weighted"
+                            style="@style/style_spinner" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/style_param_layout" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/parmeter_select" />
+
+                        <Spinner
+                            android:id="@+id/ps_select"
+                            style="@style/style_spinner" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/style_param_layout" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/parmeter_average" />
+
+                        <EditText
+                            android:id="@+id/ps_average"
+                            style="@style/style_aty_edittext_editable" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <!-- <LinearLayout style="@style/style_layout_left" > -->
+
+
+                    <!-- <TextView -->
+                    <!-- style="@style/style_aty_label" -->
+                    <!-- android:gravity="center" /> -->
+                    <!-- </LinearLayout> -->
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout style="@style/Button_layout_style" >
+
+            <Button
+                android:id="@+id/ps_Reset"
+                style="@style/Button_style"
+                android:layout_marginRight="80dp"
+                android:text="@string/button_reset" />
+
+            <Button
+                android:id="@+id/ps_Save"
+                style="@style/Button_style"
+                android:text="@string/button_save" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

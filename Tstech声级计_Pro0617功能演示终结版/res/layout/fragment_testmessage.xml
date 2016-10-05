@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bkg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/style_fmg_title" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tltle_fragment_testmessage"
+                android:textColor="@color/text_color"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9" >
+
+            <LinearLayout style="@style/style_aty_scrollchild" >
+
+                <!-- 测试信息 -->
+
+
+                <!-- <LinearLayout -->
+                <!-- style="@style/style_layout" > -->
+
+                <LinearLayout style="@style/style_fmg_child_title" >
+
+                    <TextView
+                        style="@style/childTittle"
+                        android:text="@string/title_testmessage_child_test" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_layout_left" >
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:text="@string/test_num" />
+
+                    <EditText
+                        android:id="@+id/testmessage_testNum"
+                        style="@style/style_aty_edittext_editable" />
+
+                    <TextView style="@style/style_aty_label" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_layout_left" >
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:text="@string/test_content" />
+
+                    <EditText
+                        android:id="@+id/testmessage_content"
+                        style="@style/style_aty_edittext_editable" />
+
+                    <TextView style="@style/style_aty_label" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_layout_left" >
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:text="@string/test_instruction" />
+
+                    <EditText
+                        android:id="@+id/testmessage_instruction"
+                        style="@style/style_aty_edittext_editable" />
+
+                    <TextView style="@style/style_aty_label" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/style_layout_left"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:text="@string/test_name" />
+
+                    <EditText
+                        android:id="@+id/testmessage_name"
+                        style="@style/style_aty_edittext_editable" />
+
+                    <TextView style="@style/style_aty_label" />
+                </LinearLayout>
+                <!-- </LinearLayout> -->
+
+
+                <!-- 车辆信息 -->
+
+
+                <!-- <LinearLayout -->
+                <!-- style="@style/style_layout" -->
+                <!-- android:background="@drawable/linearlayout" > -->
+
+
+                <!-- <LinearLayout -->
+                <!-- style="@style/style_layout_child" -->
+                <!-- android:layout_width="match_parent" > -->
+
+                <LinearLayout style="@style/style_fmg_child_title" >
+
+                    <TextView
+                        style="@style/childTittle"
+                        android:text="@string/title_testmessage_child_cartest" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_layout_left" >
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:text="@string/test_caritemnum" />
+
+                    <EditText
+                        android:id="@+id/testmessage_carItemNum"
+                        style="@style/style_aty_edittext_editable" />
+
+                    <TextView style="@style/style_aty_label" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_layout_left" >
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:text="@string/test_carnum" />
+
+                    <EditText
+                        android:id="@+id/testmessage_carNum"
+                        style="@style/style_aty_edittext_editable" />
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_layout_left" >
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:text="@string/test_point" />
+
+                    <EditText
+                        android:id="@+id/testmessage_testPoint"
+                        style="@style/style_aty_edittext_editable" />
+
+                    <TextView style="@style/style_aty_label" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_layout_left" >
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:text="@string/test_croadnum" />
+
+                    <EditText
+                        android:id="@+id/testmessage_cRoadNum"
+                        style="@style/style_aty_edittext_editable" />
+
+                    <TextView style="@style/style_aty_label" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_layout_left" >
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:text="@string/test_date" />
+
+                    <EditText
+                        android:id="@+id/testmessage_testDate"
+                        style="@style/style_aty_edittext_editable"
+                        android:focusable="false"
+                        android:inputType="none" />
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/style_layout_left"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:text="@string/test_speed" />
+
+                    <EditText
+                        android:id="@+id/testmessage_testSpeed"
+                        style="@style/style_aty_edittext_editable" />
+
+                    <TextView
+                        style="@style/unitText_style"
+                        android:text="km / h" />
+                </LinearLayout>
+                <!-- </LinearLayout> -->
+                <!-- </LinearLayout> -->
+
+
+                <!-- 人员信息 -->
+
+
+                <!-- <LinearLayout -->
+                <!-- style="@style/style_layout" -->
+                <!-- android:background="@drawable/linearlayout" > -->
+
+                <LinearLayout style="@style/style_fmg_child_title" >
+
+                    <TextView
+                        style="@style/childTittle"
+                        android:text="@string/title_testmessage_child_selecttest" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_layout_left" >
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:text="@string/test_distance" />
+
+                    <EditText
+                        android:id="@+id/testmessage_distance"
+                        style="@style/style_aty_edittext_editable" />
+
+                    <TextView
+                        style="@style/unitText_style"
+                        android:text="km" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_layout_left" >
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:text="@string/test_spinafmileage" />
+
+                    <EditText
+                        android:id="@+id/testmessage_SpinAfmileage"
+                        style="@style/style_aty_edittext_editable" />
+
+                    <TextView
+                        style="@style/unitText_style"
+                        android:text="km" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_layout_left" >
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:text="@string/test_wheeldiameter" />
+
+                    <EditText
+                        android:id="@+id/testmessage_Wheeldiameter"
+                        style="@style/style_aty_edittext_editable" />
+
+                    <TextView style="@style/style_aty_label" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/style_layout_left"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:text="@string/test_address" />
+
+                    <LinearLayout style="@style/style_aty_edittext_editable" >
+
+                        <ImageView
+                            android:id="@+id/refurbish_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_citylist_gps" />
+
+                        <TextView
+                            android:id="@+id/testmessage_gps"
+                            style="@style/style_aty_label"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:text="选择当前位置" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/style_aty_label"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- </LinearLayout> -->
+        </ScrollView>
+
+        <LinearLayout style="@style/Button_layout_style" >
+
+            <Button
+                android:id="@+id/testmessage_Reset"
+                style="@style/Button_style"
+                android:layout_marginRight="80dp"
+                android:text="@string/button_reset" />
+
+            <Button
+                android:id="@+id/testmessage_Save"
+                style="@style/Button_style"
+                android:text="@string/button_save" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

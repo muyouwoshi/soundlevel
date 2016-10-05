@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="frequency">
+        <item>48000</item>
+        <item>44100</item>
+        <item>25600</item>
+        <item>12800</item>
+    </string-array>
+<!--     <string-array name="resolution"> -->
+<!--         <item>10</item> -->
+<!--         <item>20 </item> -->
+<!--         <item>50</item> -->
+<!--         <item>100</item> -->
+<!--     </string-array> -->
+    <string-array name="function">
+        <item>Hanning</item>
+        <item>Hamming</item>
+    </string-array>
+    <string-array name="weighted">
+        <item>None</item>
+        <item>A计权 </item>
+        <item>C计权</item>
+    </string-array>
+    <string-array name="select">
+        <item>快档</item>
+        <item>慢档 </item>
+    </string-array>
+
+</resources>

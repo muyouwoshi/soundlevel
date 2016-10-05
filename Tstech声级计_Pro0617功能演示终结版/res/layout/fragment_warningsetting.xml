@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bkg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/style_fmg_title" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tltle_fragment_warning"
+                android:textColor="@color/layout_title_text"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8" >
+
+            <LinearLayout style="@style/style_aty_scrollchild" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <!-- <LinearLayout -->
+                    <!-- style="@style/style_layout" -->
+                    <!-- android:layout_weight="1" > -->
+
+
+                    <!-- 总压声级 -->
+
+                    <LinearLayout style="@style/style_fmg_child_title" >
+
+                        <TextView
+                            style="@style/childTittle"
+                            android:text="@string/title_warn_safe" />
+                    </LinearLayout>
+
+                    <!-- 安全区 -->
+
+                    <LinearLayout style="@style/style_layout_left" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/warn_safe_text" />
+
+                        <EditText
+                            android:id="@+id/ws_safearea"
+                            style="@style/style_aty_edittext_editable"
+                            android:inputType="phone|number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/tip1"
+                            style="@style/tipShowText"
+                            android:text="@string/min_Values" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:text="dB" />
+                    </LinearLayout>
+
+                    <!-- 预警区 -->
+
+                    <LinearLayout style="@style/style_layout_left" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/warn_warning_text" />
+
+                        <EditText
+                            android:id="@+id/ws_warningarea"
+                            style="@style/style_aty_edittext_editable"
+                            android:inputType="phone|number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/tip2"
+                            style="@style/tipShowText"
+                            android:text="@string/mid_Values" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:text="dB" />
+                    </LinearLayout>
+
+                    <!-- 高危区 -->
+
+                    <LinearLayout
+                        style="@style/style_layout_left"
+                        android:layout_marginBottom="10dp" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/warn_danger_text" />
+
+                        <EditText
+                            android:id="@+id/ws_dangerarea"
+                            style="@style/style_aty_edittext_editable"
+                            android:inputType="phone|number"
+                            android:maxLength="3" />
+
+                        <TextView
+                            android:id="@+id/tip3"
+                            style="@style/tipShowText"
+                            android:text="@string/max_Values" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:text="dB" />
+                    </LinearLayout>
+                    <!-- </LinearLayout> -->
+
+
+                    <!-- 主频声压级 -->
+
+
+                    <!-- <LinearLayout -->
+                    <!-- style="@style/style_layout" -->
+                    <!-- android:layout_weight="1" > -->
+
+                    <LinearLayout style="@style/style_fmg_child_title" >
+
+                        <TextView
+                            style="@style/childTittle"
+                            android:text="@string/title_warn_warning" />
+                    </LinearLayout>
+
+                    <!-- 安全区 -->
+
+                    <LinearLayout style="@style/style_layout_left" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/warn_safe_text" />
+
+                        <EditText
+                            android:id="@+id/ws_Frequencysafe"
+                            style="@style/style_aty_edittext_editable"
+                            android:inputType="phone|number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/tip4"
+                            style="@style/tipShowText"
+                            android:text="@string/min_Values" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:text="dB" />
+                    </LinearLayout>
+
+                    <!-- 预警区 -->
+
+                    <LinearLayout style="@style/style_layout_left" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/warn_warning_text" />
+
+                        <EditText
+                            android:id="@+id/ws_Frequencywarning"
+                            style="@style/style_aty_edittext_editable"
+                            android:inputType="phone|number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/tip5"
+                            style="@style/tipShowText"
+                            android:text="@string/mid_Values" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:text="dB" />
+                    </LinearLayout>
+
+                    <!-- 高危区 -->
+
+                    <LinearLayout
+                        style="@style/style_layout_left"
+                        android:layout_marginBottom="10dp" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/warn_danger_text" />
+
+                        <EditText
+                            android:id="@+id/ws_Frequencydanger"
+                            style="@style/style_aty_edittext_editable"
+                            android:inputType="phone|number"
+                            android:maxLength="3" />
+
+                        <TextView
+                            android:id="@+id/tip6"
+                            style="@style/tipShowText"
+                            android:text="@string/max_Values" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:text="dB" />
+                    </LinearLayout>
+                    <!-- </LinearLayout> -->
+
+
+                    <!-- 主频能量占比 -->
+
+
+                    <!-- <LinearLayout -->
+                    <!-- style="@style/style_layout" -->
+                    <!-- android:layout_weight="1" > -->
+
+                    <LinearLayout style="@style/style_fmg_child_title" >
+
+                        <TextView
+                            style="@style/childTittle"
+                            android:text="@string/title_warn_danger" />
+                    </LinearLayout>
+
+                    <!-- 安全区 -->
+
+                    <LinearLayout style="@style/style_layout_left" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/warn_safe_text" />
+
+                        <EditText
+                            android:id="@+id/ws_Dangersafe"
+                            style="@style/style_aty_edittext_editable"
+                            android:inputType="phone|number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/tip7"
+                            style="@style/tipShowText"
+                            android:text="@string/min_Values" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:text="%" />
+                    </LinearLayout>
+
+                    <!-- 预警区 -->
+
+                    <LinearLayout style="@style/style_layout_left" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/warn_warning_text" />
+
+                        <EditText
+                            android:id="@+id/ws_Dangerwarning"
+                            style="@style/style_aty_edittext_editable"
+                            android:inputType="phone|number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/tip8"
+                            style="@style/tipShowText"
+                            android:text="@string/mid_Values" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:text="%" />
+                    </LinearLayout>
+
+                    <!-- 高危区 -->
+
+                    <LinearLayout style="@style/style_layout_left" >
+
+                        <TextView
+                            style="@style/style_aty_label"
+                            android:text="@string/warn_danger_text" />
+
+                        <EditText
+                            android:id="@+id/ws_Dangerdanger"
+                            style="@style/style_aty_edittext_editable"
+                            android:inputType="phone|number"
+                            android:maxLength="3" />
+
+                        <TextView
+                            android:id="@+id/tip9"
+                            style="@style/tipShowText"
+                            android:text="@string/max_Values" />
+
+                        <TextView
+                            style="@style/unitText_style"
+                            android:text="%" />
+                    </LinearLayout>
+                    <!-- </LinearLayout> -->
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <!-- <LinearLayout -->
+            <!-- style="@style/style_layout" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="@drawable/round_bg" -->
+            <!-- android:padding="10dp" > -->
+
+
+            <!-- <LinearLayout -->
+            <!-- style="@style/style_layout_left" -->
+            <!-- android:background="#59C2E6" > -->
+
+
+            <!-- <TextView -->
+            <!-- style="@style/style_aty_label" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:text="设置安全条件：" -->
+            <!-- android:textColor="@color/white" /> -->
+
+
+            <!-- <EditText -->
+            <!-- android:id="@+id/safety_condition" -->
+            <!-- style="@style/style_aty_edittext_editable" -->
+            <!-- android:background="@null" -->
+            <!-- android:enabled="false" -->
+            <!-- android:gravity="center" -->
+            <!-- android:textColor="@color/white" /> -->
+
+
+            <!-- <ImageButton -->
+            <!-- android:id="@+id/setting_safe" -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="@android:color/transparent" -->
+            <!-- android:src="@drawable/fmg_record_setting" /> -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_weight="0.5" /> -->
+            <!-- </LinearLayout> -->
+
+            <LinearLayout style="@style/style_layout_left" >
+
+                <TextView
+                    style="@style/style_aty_label"
+                    android:layout_weight="2"
+                    android:text="@string/warn_warning_setting" />
+
+                <EditText
+                    android:id="@+id/warning_condition"
+                    style="@style/style_aty_edittext_editable"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+
+                <ImageButton
+                    android:id="@+id/setting_warning"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/fmg_record_setting" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_layout_left" >
+
+                <TextView
+                    style="@style/style_aty_label"
+                    android:layout_weight="2"
+                    android:text="@string/warn_danger_setting" />
+
+                <EditText
+                    android:id="@+id/alarm_condition"
+                    style="@style/style_aty_edittext_editable"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+
+                <ImageButton
+                    android:id="@+id/setting_alarm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/fmg_record_setting" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- </LinearLayout> -->
+
+        <LinearLayout style="@style/Button_layout_style" >
+
+            <Button
+                android:id="@+id/ws_Reset"
+                style="@style/Button_style"
+                android:layout_marginRight="80dp"
+                android:text="@string/button_reset" />
+
+            <Button
+                android:id="@+id/ws_Save"
+                style="@style/Button_style"
+                android:text="@string/button_save" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

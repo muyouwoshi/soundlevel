@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffcc"
+    android:orientation="vertical"
+    android:padding="1px" >
+
+    <!-- 报告选择类型 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#59C2E6"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="请选择报告类型"
+            android:textSize="20dp"
+            android:textColor="#ffffffff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ffffffcc" />
+        
+        <TextView
+            android:id="@+id/pop_text_report"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:text="测试报告"
+            android:textSize="14dp"
+            android:textColor="#ffffffff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ffffffcc" />
+
+        <TextView
+            android:id="@+id/pop_warning_report"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:text="预警报告"
+            android:textSize="14dp"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_color">#91E201</color>
+    <color name="btn_default">#33333B</color>
+    <color name="btn_select">#101012</color>
+    <color name="btn_txt_default">#ffffff</color>
+    <color name="btn_txt_select">#96E005</color>
+    <color name="title_bkg">#2D2E33</color>
+    <color name="fmg_bkg">#33333B</color>
+    <color name="color_item_press">#4169e1</color>
+    <color name="color_item_normal">#ff000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white1">#ebebeb</color>
+    <color name="black">#000000</color>
+    <color name="layout_bg">#ffffffff</color>
+    <color name="layout_line">#b0e0e6</color>
+    <color name="layout_line_blue">#59C2E6</color>
+    <color name="layout_title_text">#91E201</color>
+    <color name="calculator_btn_color">#336633</color>
+    <color name="layout_line_textColor">#ff000000</color>
+    <color name="horizontal_lineColor">#cccccc</color>
+    <color name="tip_show_textColor">#696969</color>
+    <color name="calculator_bg">#f4f4f4</color>
+    <color name="welcome_text_color">#b1b1b1</color>
+</resources>

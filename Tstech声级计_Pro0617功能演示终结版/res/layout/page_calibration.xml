@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  	android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bkg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/style_fmg_title"
+            android:background="@drawable/main_bkg" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/title_bg"
+                android:gravity="center"
+                android:text="@string/tltle_fragment_calibration"
+                android:textColor="@color/text_color"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.4"
+            android:background="@drawable/fmg_calibration_rate_flash"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:text="@string/calibration_fragment_text"
+                android:textColor="#eac100"
+                android:textSize="18sp" />
+
+            <ScrollView
+                android:id="@+id/calibration_scroll_status"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8.5" >
+
+                <TextView
+                    android:id="@+id/calibration_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="#ccddcc" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1.1"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/fmg_calibration_rate_set"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/calibration_flashrate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="7.5"
+                        android:gravity="center_vertical|right"
+                        android:text="校对"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="2.5"
+                        android:gravity="bottom"
+                        android:paddingBottom="5dp"
+                        android:text="mv/Pa"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"  />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/calibration_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_calibration_save" />
+
+            <!-- <ToggleButton -->
+            <!-- android:id="@+id/calibration_last" -->
+            <!-- android:layout_width="40dp" -->
+            <!-- android:layout_height="50dp" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:checked="true" -->
+            <!-- android:textOff="上次关闭" -->
+            <!-- android:textOn="使用上次" -->
+            <!-- android:textSize="8dp" /> -->
+
+            <Button
+                android:id="@+id/calibration_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_calibration_return" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1.3"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
+            
+            <ImageButton
+                android:id="@+id/calibration_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/selector_record_unrecord" />
+            
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

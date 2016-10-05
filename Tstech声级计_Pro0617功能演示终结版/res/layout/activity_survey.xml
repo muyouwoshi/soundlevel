@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bkg" >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <!-- 监测，后处理 -->
+
+            <LinearLayout
+                style="@style/style_fmg_title"
+                android:background="@drawable/title_bg"
+                android:orientation="horizontal" >
+
+                <!-- 打开菜单 -->
+
+                <LinearLayout
+                    android:id="@+id/left_open_linear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageButton
+                        android:id="@+id/left_open_drawer"
+                        style="@style/style_fmg_title_logo"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/left_menu" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5" />
+                <!-- 监测后处理 -->
+
+                <Switch
+                    android:id="@+id/survey_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="3"
+                    android:checked="false"
+                    android:textOff="监测"
+                    android:textOn="后处理"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track" />
+            </LinearLayout>
+
+            <!-- 车号，端位，信息加载 -->
+
+            <LinearLayout
+                style="@style/style_layout_line"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.6" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="3" >
+
+                        <LinearLayout
+                            android:id="@+id/carText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/select_bar_bg"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                style="@style/style_aty_label"
+                                android:drawableRight="@drawable/vlinear"
+                                android:gravity="center"
+                                android:text="车号"
+                                android:textColor="@color/white" />
+
+                            <com.tstech.soundlevelinstrument.picker.CustomNumberPicker
+                                android:id="@+id/car_picker"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/survey_aspect_bar" />
+                        </LinearLayout>
+
+                        <!-- 端位 -->
+
+                        <LinearLayout
+                            android:id="@+id/dwText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="7dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/select_bar_bg"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                style="@style/style_aty_label"
+                                android:drawableRight="@drawable/vlinear"
+                                android:gravity="center"
+                                android:text="端位"
+                                android:textColor="@color/white" />
+
+                            <com.tstech.soundlevelinstrument.picker.CustomNumberPicker
+                                android:id="@+id/dw_picker"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/survey_aspect_bar" />
+                        </LinearLayout>
+
+                        <!-- 信息加载 -->
+
+                        <LinearLayout
+                            android:id="@+id/messageText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="right"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <Button
+                                android:id="@+id/message_loader"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/selector_all_btn"
+                                android:text="信息加载"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- 生成报告 -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/survey_report"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_all_btn"
+                            android:text="生成报告"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 数值显示 dB -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/display"
+                            android:layout_width="180px"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="- -"
+                            android:textColor="@color/text_color"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical|left"
+                            android:text="dB"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- f1~f5 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/f1_text"
+                            style="@style/TextView_style"
+                            android:text="f1" />
+
+                        <TextView
+                            android:id="@+id/f2_text"
+                            style="@style/TextView_style"
+                            android:text="f2" />
+
+                        <TextView
+                            android:id="@+id/f3_text"
+                            style="@style/TextView_style"
+                            android:text="f3" />
+
+                        <TextView
+                            android:id="@+id/f4_text"
+                            style="@style/TextView_style"
+                            android:text="f4" />
+
+                        <TextView
+                            android:id="@+id/f5_text"
+                            style="@style/TextView_style"
+                            android:text="f5" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1px"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/fdb_bg"
+                            android:gravity="center"
+                            android:text="(Hz)"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/db1_text"
+                            style="@style/TextView_style"
+                            android:text="db1" />
+
+                        <TextView
+                            android:id="@+id/db2_text"
+                            style="@style/TextView_style"
+                            android:text="db2" />
+
+                        <TextView
+                            android:id="@+id/db3_text"
+                            style="@style/TextView_style"
+                            android:text="db3" />
+
+                        <TextView
+                            android:id="@+id/db4_text"
+                            style="@style/TextView_style"
+                            android:text="db4" />
+
+                        <TextView
+                            android:id="@+id/db5_text"
+                            style="@style/TextView_style"
+                            android:text="db5" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1px"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/fdb_bg"
+                            android:gravity="center"
+                            android:text="(dB)"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 图 和 灯 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="5.5"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <!-- 灯 -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/carDw"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/icon_cardw"
+                            android:gravity="center|left"
+                            android:textSize="14dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/light_text" -->
+                    <!-- android:layout_width="0dp" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:layout_weight="1" -->
+                    <!-- android:gravity="center|right" -->
+                    <!-- android:text="正常：" -->
+                    <!-- android:textSize="14dp" /> -->
+
+                    <ImageView
+                        android:id="@+id/green"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/white_light" />
+                </LinearLayout>
+
+                <!-- 图 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/containear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp" >
+                    </android.support.v4.view.ViewPager>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 监测按钮 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/main_bkg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" />
+
+                <ImageButton
+                    android:id="@+id/survey_start_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/selector_record_unrecord" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 左滑菜单 -->
+
+
+        <!-- android:paddingTop="50dp" -->
+
+        <RelativeLayout
+            android:id="@+id/survey_left_menu"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start" >
+
+            <ListView
+                android:id="@+id/left_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/menu_bg"
+                android:cacheColorHint="@android:color/transparent"
+                android:choiceMode="singleChoice"
+                android:divider="@drawable/menu_linear"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none" >
+            </ListView>
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+    <!-- 加载fragment界面 -->
+
+    <RelativeLayout
+        android:id="@+id/fragContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+</RelativeLayout>

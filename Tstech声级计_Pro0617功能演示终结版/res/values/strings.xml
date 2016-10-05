@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tstech声级计</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="activity_welcome_text">本应用试用期截止到 2016-06-01</string>
+    <string name="title_activity_test_aty">TestAty</string>
+    <string name="tltle_fragment_report">报告</string>
+    <string name="tltle_fragment_warning">预警设置</string>
+    <string name="tltle_fragment_testmessage">实验信息</string>
+    <string name="tltle_fragment_parametersetting">采集设置</string>
+    <string name="tltle_fragment_calibration">标定</string>
+    
+    <string name="title_testmessage_child_test">测试信息</string>
+    <string name="title_testmessage_child_cartest">车辆信息</string>
+    <string name="title_testmessage_child_selecttest">选填信息</string>
+    
+    <!-- popuwindow -->
+    <string name="and">&amp;</string>
+    <string name="or">|</string>
+    <string name="min_Values">(num &lt; 70)</string>
+    <string name="mid_Values">(70 &lt;= num &lt; 90)</string>
+    <string name="max_Values">(90 &lt;= num)</string>
+    <string name="hintText">输入格式如：A|B|C ; A|(B&amp;C)</string>
+    <!-- warningFragment -->
+    <string name="title_warn_safe">条件A：总声压级</string>
+    <string name="title_warn_warning">条件B：主频声压级</string>
+    <string name="title_warn_danger">条件C：主频能量占比</string>
+    <string name="warn_safe_text">安全区：</string>
+    <string name="warn_warning_text">预警区：</string>
+    <string name="warn_danger_text">高危区：</string>
+    <string name="warn_warning_setting">设置预警条件：</string>
+    <string name="warn_danger_setting">设置报警条件：</string>
+    <!-- testMessageFragment -->
+	<string name="test_num">检测编号：</string>
+	<string name="test_content">内容：</string>
+	<string name="test_instruction">说明：</string>
+	<string name="test_name">姓名：</string>
+	<string name="test_caritemnum">车组号：</string>
+	<string name="test_carnum">车辆号：</string>
+	<string name="test_point">测点：</string>
+	<string name="test_croadnum">运营交路及车次：</string>
+	<string name="test_date">试验日期：</string>
+	<string name="test_speed">试验速度：</string>
+	<string name="test_distance">运营总里程：</string>
+	<string name="test_spinafmileage">旋后里程：</string>
+	<string name="test_wheeldiameter">车轮直径：</string>
+	<string name="test_address">当前位置 ：</string>
+    <!-- parmetersettingFragment -->
+    <string name="parmeter_freq">采样频率：</string>
+    <string name="parmeter_scope">频率范围：</string>
+    <string name="parmeter_resolution">频率分辨率：</string>
+    <string name="parmeter_function">加窗函数：</string>
+    <string name="parmeter_weighted">计权：</string>
+    <string name="parmeter_select">档位选择：</string>
+    <string name="parmeter_average">平均次数：</string>
+    <!-- button -->
+    <string name="button_reset">重置</string>
+    <string name="button_save">保存</string>
+    <!-- other Text -->
+	<string name="calibration_fragment_text">使用94dB标准声源进行校准\n新校准时请多次校准后保存结果</string>
+</resources>

@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bkg"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+	    <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/title" />
+	</RelativeLayout>
+	
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/containear" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="0dp" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:orientation="vertical" > -->
+    <!-- </LinearLayout> -->
+
+<!--     <android.support.v4.view.ViewPager -->
+<!--         android:id="@+id/containear" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="0dp" -->
+<!--         android:layout_weight="1" > -->
+<!--     </android.support.v4.view.ViewPager> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bar_record" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/bar_record"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/bar_tab" />
+
+            <ImageView
+                android:id="@+id/bar_calibration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/bar_tab" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- <ScrollView -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="0dp" -->
+    <!-- android:layout_weight="9" > -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_weight="2"
+            android:background="@drawable/linearlayout" >
+
+            <LinearLayout style="@style/style_layout_left" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="测试报告"
+                    android:textColor="#3366cc"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/style_layout"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/linearlayout" >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:id="@+id/report_listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                    </ListView>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_weight="2"
+            android:background="@drawable/linearlayout" >
+
+            <LinearLayout style="@style/style_layout_left" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="预警报告"
+                    android:textColor="#3366cc"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/style_layout"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/linearlayout" >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:id="@+id/warming_listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                    </ListView>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/Button_layout_style" >
+
+            <Button
+                android:id="@+id/report_style"
+                style="@style/Button_style"
+                android:layout_marginRight="80dp"
+                android:text="报告类型" />
+
+            <Button
+                android:id="@+id/report_send"
+                style="@style/Button_style"
+                android:text="发送方式" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- </ScrollView> -->
+
+</LinearLayout>

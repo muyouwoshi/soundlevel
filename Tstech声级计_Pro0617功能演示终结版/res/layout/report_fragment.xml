@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bkg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/style_fmg_title" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/tltle_fragment_report"
+            android:textColor="@color/text_color"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical" >
+
+        <!-- <com.tstech.soundlevelinstrument.view.RecyclerShowView -->
+        <!-- android:id="@+id/rep_reView" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent"/> -->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/rep_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <!-- <LinearLayout -->
+    <!-- style="@style/Button_layout_style" -->
+    <!-- android:background="#ffffffff" > -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/set_report" -->
+    <!-- style="@style/Button_style" -->
+    <!-- android:layout_marginRight="80dp" -->
+    <!-- android:text="生成报告" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/read_report" -->
+    <!-- style="@style/Button_style" -->
+    <!-- android:text="查看报告" /> -->
+    <!-- </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:clickable="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/btn_rep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rep_set" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/set_report"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/bar_tab" />
+
+                <ImageButton
+                    android:id="@+id/read_report"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/bar_tab" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

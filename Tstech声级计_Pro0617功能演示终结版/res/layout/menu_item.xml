@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp" 
+	    android:paddingRight="20dp"
+    	android:textColor="@drawable/selector_drawerlayout_item_text_color"
+	    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+	    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:duplicateParentState="true"
+        android:text=""
+        android:textSize="18sp" />
+    
+    <!-- 有背景的 -->
+
+<!--     <TextView -->
+<!--         android:id="@+id/item_textview" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:gravity="center_vertical" -->
+<!-- 	    android:textAppearance="?android:attr/textAppearanceListItemSmall" -->
+<!-- 	    android:background="?android:attr/activatedBackgroundIndicator" -->
+<!-- 	    android:minHeight="?android:attr/listPreferredItemHeightSmall" -->
+<!--         android:duplicateParentState="true" -->
+<!-- 	    android:paddingLeft="20dp" -->
+<!-- 	    android:paddingRight="20dp" -->
+<!-- 	    android:textColor="#fff" -->
+<!--         android:text="" -->
+<!--         android:textSize="18sp" /> -->
+
+</LinearLayout>

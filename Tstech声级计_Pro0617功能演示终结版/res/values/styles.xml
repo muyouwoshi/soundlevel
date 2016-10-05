@@ -1,0 +1,245 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:listDivider">@drawable/recyclerview_linear</item>
+    </style>
+
+    <!-- activity布局风格，行标签文本 -->
+    <style name="style_aty_label">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <!-- 单位标签文本字体风格 -->
+	<style name="unitText_style" parent="style_aty_label">
+	    <item name="android:layout_weight">1</item>
+	</style>
+
+    <!-- activity_edit布局风格，行输入值，可用编辑 -->
+    <style name="style_aty_edittext_editable">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:editable">true</item>
+        <item name="android:layout_weight">1.8</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background">@drawable/select_bar_bg</item>
+        <item name="android:textCursorDrawable">@drawable/edit_cursor_color</item>
+    </style>
+    
+    <!-- spinner -->
+    <style name="style_spinner">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:editable">true</item>
+        <item name="android:layout_weight">1.8</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background">@drawable/spinner_bg</item>
+    </style>
+
+    <!-- activity_edit布局风格，行输入值，可用编辑 -->
+    <!-- <style name="style_aty_spinnerEdit_editable" parent="style_aty_label"> -->
+    <!-- <item name="android:editable">true</item> -->
+    <!-- <item name="android:gravity">center_vertical|left</item> -->
+    <!-- <item name="android:layout_weight">2</item> -->
+    <!-- <item name="android:layout_marginLeft">20dp</item> -->
+    <!-- <item name="android:layout_marginRight">40dp</item> -->
+    <!-- </style> -->
+
+
+    <!-- 水平间隔线 -->
+    <style name="style_horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/horizontal_lineColor</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <!-- 测试信息界面 layout布局风格，块 -->
+    <style name="style_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- 测试信息界面 layout_line布局风格，行 -->
+    <style name="style_layout_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- 测试信息界面 layout_line布局风格，行 -->
+    <style name="style_layout_left">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/test_line_bg</item>
+    </style>
+
+    <!-- 采集界面的layout_line -->
+    <style name="style_param_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/parm_spinner_bg</item>
+    </style>
+    
+    <!-- 相关界面，scrollview的子容器控件 -->
+    <style name="style_aty_scrollchild">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- 测试信息界面 layout布局风格，块 -->
+    <style name="style_layout_child">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- fragment 标题  页头 -->
+    <style name="style_fmg_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/title_bg</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- fragment child  line 行的设置 -->
+    <style name="style_fmg_child_title" parent="style_fmg_title">
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- fmg布局风格，页头logo -->
+    <style name="style_fmg_title_logo">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- button 样式 -->
+    <style name="Button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_all_btn</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- button的linearlayout的样式 -->
+    <!-- <item name="android:background">@color/white</item> -->
+    <style name="Button_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- textView的 表格的样式 -->
+    <style name="TextView_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">1px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/fdb_bg</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawableRight">@drawable/table_linear_bg</item>
+    </style>
+
+    <!-- 定义对话框样式 -->
+    <!-- <style name="Dialog" parent="android:style/Theme.Dialog"> -->
+    <!-- <item name="android:windowBackground">@android:color/holo_blue_light</item> -->
+    <!-- <item name="android:windowNoTitle">false</item> -->
+    <!-- <item name="android:windowIsFloating">true</item> -->
+    <!-- </style> -->
+
+
+    <!-- 计算button样式 -->
+    <style name="calculator">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/calculator_btn</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- testMessage ChildTittle -->
+    <style name="childTittle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 提示输入范围 -->
+    <style name="tipShowText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textColor">@color/tip_show_textColor</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_weight">1.5</item>
+    </style>
+
+    <!-- popupWindow动画效果 -->
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@drawable/fade_in</item>
+        <item name="android:windowExitAnimation">@drawable/fade_out</item>
+    </style>
+
+</resources>
